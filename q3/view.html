@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>תקלות מדווחות</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>רשימת תקלות מדווחות</h1>
+    <div id="filters" class="filter-container">
+      <label>
+        תיאור תקלה:
+        <select id="filterType">
+          <option value="">הכל</option>
+          <option value="רעד">רעד</option>
+          <option value="חור בזמן">חור בזמן</option>
+          <option value="מפגש עם דינוזאור">מפגש עם דינוזאור</option>
+        </select>
+      </label>
+
+      <label>
+        סטטוס:
+        <select id="filterStatus">
+          <option value="">הכל</option>
+          <option value="פתוחה">פתוחה</option>
+          <option value="טופלה">טופלה</option>
+        </select>
+      </label>
+
+      <label>
+        זמן יעד - מתאריך:
+        <input type="datetime-local" id="filterStart" />
+      </label>
+
+      <label>
+        זמן יעד - עד תאריך:
+        <input type="datetime-local" id="filterEnd" />
+      </label>
+
+      <button id="applyFilters">סנן</button>
+    </div>
+
+    <div id="averageResult"></div>
+    <div id="reportList"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

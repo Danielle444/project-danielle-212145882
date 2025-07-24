@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>דיווח תקלה בתעלת זמן</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>דיווח תקלה בתעלת זמן</h1>
+
+    <form id="reportForm">
+      <label>
+        מספר תעלה:
+        <input type="number" id="channel" />
+      </label>
+
+      <label>
+        זמן יעד:
+        <input type="datetime-local" id="targetTime" />
+      </label>
+
+      <label>
+        זמן נחיתה בפועל:
+        <input type="datetime-local" id="landingTime" />
+      </label>
+
+      <label>
+        תיאור התקלה:
+        <select id="type">
+          <option value="">בחר תקלה</option>
+          <option value="רעד">רעד</option>
+          <option value="חור בזמן">חור בזמן</option>
+          <option value="מפגש עם דינוזאור">מפגש עם דינוזאור</option>
+        </select>
+      </label>
+
+      <div class="form-row checkbox-row">
+        <label for="multiple">יותר מאדם אחד חצה?</label>
+        <input type="checkbox" id="multiple" />
+      </div>
+
+      <label>
+        כתובת אימייל:
+        <input type="email" id="email" />
+      </label>
+
+      <button type="submit">שלח תקלה</button>
+    </form>
+
+    <div id="messages"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
