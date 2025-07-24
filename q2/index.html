@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>לוח אירועים - עיר הגמדים הקסומה</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="side-nav">
+      <h3>אירועים קסומים</h3>
+      <ul>
+        <li><a href="#magic">קסם</a></li>
+        <li><a href="#gremlin">שירה עם גרמלינים</a></li>
+        <li><a href="#fireflies">ריקודים עם גחליליות</a></li>
+        <li><a href="#fairy">פסטיבלים פייתיים</a></li>
+        <li><a href="#fortune">תחזיות מהמערה</a></li>
+      </ul>
+    </nav>
+
+    <header class="main-header">
+      <h1>עיריית רופילנד - חוגגים מתחת לפני האדמה</h1>
+      <p class="slogan">קסם מתחת לאדמה, תרבות מעל המצופה</p>
+    </header>
+
+   <main class="events-container">
+
+  <div class="event-wrapper">
+    <span id="magic" class="scroll-anchor"></span>
+    <div class="event-card">
+      <img src="images/fungi.jpg" alt="פטריות זוהרות" class="event-image" />
+      <div class="event-details">
+        <h2 class="event-title">ליל הפטריות הזוהרות</h2>
+        <p class="event-organizer">מארגן: מועצת החכמים</p>
+        <p class="event-time">ביום שבו הירח כחול</p>
+        <span class="event-tag tag-private">למוזמנים בלבד</span>
+      </div>
+      <div class="event-magic">רמז: תפתח את עיניך בזמן החלום.</div>
+    </div>
+  </div>
+
+  <div class="event-wrapper">
+    <span id="gremlin" class="scroll-anchor"></span>
+    <div class="event-card">
+      <img src="images/gremlin.jpg" alt="גרמלין רום" class="event-image" />
+      <div class="event-details">
+        <h2 class="event-title">שירת הסלעים עם גרמלין רוּם</h2>
+        <p class="event-organizer">מארגן: גרמלין רום</p>
+        <p class="event-time">כאשר הקריסטלים שרים</p>
+        <span class="event-tag tag-open">פתוח לכל היצורים</span>
+      </div>
+      <div class="event-magic">קולו של גרמלין יכול לרפא לב שבור.</div>
+    </div>
+  </div>
+
+  <div class="event-wrapper">
+    <span id="fireflies" class="scroll-anchor"></span>
+    <div class="event-card">
+      <img src="images/fireflies.jpg" alt="ריקודים עם גחליליות" class="event-image" />
+      <div class="event-details">
+        <h2 class="event-title">ריקודים עם גחליליות</h2>
+        <p class="event-organizer">מארגן: גחלילית זהובה ראשית</p>
+        <p class="event-time">בלילה בו האור לא נגמר</p>
+        <span class="event-tag tag-flying">כולל אשכוליות מעופפות</span>
+      </div>
+      <div class="event-magic">רק מי שרוקד בלב שלם – יאיר.</div>
+    </div>
+  </div>
+
+  <div class="event-wrapper">
+    <span id="fairy" class="scroll-anchor"></span>
+    <div class="event-card">
+      <img src="images/fairy-dust.jpg" alt="פסטיבל האבק הפייתי" class="event-image" />
+      <div class="event-details">
+        <h2 class="event-title">פסטיבל האבק הפייתי</h2>
+        <p class="event-organizer">מארגן: איגוד הפיות של המערה החמישית</p>
+        <p class="event-time">ביום שבו נושבת רוח צפונית</p>
+        <span class="event-tag tag-open">פתוח לכל היצורים</span>
+      </div>
+      <div class="event-magic">משאלה אחת – אם תאמין באמת.</div>
+    </div>
+  </div>
+
+  <div class="event-wrapper">
+    <span id="fortune" class="scroll-anchor"></span>
+    <div class="event-card">
+      <img src="images/fortune.jpg" alt="שוק התחזיות הגדול" class="event-image" />
+      <div class="event-details">
+        <h2 class="event-title">שוק התחזיות הגדול</h2>
+        <p class="event-organizer">מארגן: השד מהמערה ה־3</p>
+        <p class="event-time">כששלושה ירחים נפגשים</p>
+        <span class="event-tag tag-private">למוזמנים בלבד</span>
+      </div>
+      <div class="event-magic">אל תפחד לדעת – רק תשאל נכון.</div>
+    </div>
+  </div>
+
+</main>
+
+
+    <footer>
+      <button
+        class="jump-btn"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        קפוץ לפסטיבל הבא!
+      </button>
+    </footer>
+  </body>
+</html>
